@@ -2,6 +2,7 @@ $(document).ready(function() {
     var table = $('#annuaire').on( 'draw.dt', function () {
 $("#containerannuaire").attr("id", "container"); $("#loadercontainer").css("display","none");
 } ).DataTable( {
+        buttons: [ 'excel'],
         "scrollX": true
     } );
     table.buttons().container()
